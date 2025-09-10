@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rapid Base Design Company</title>
+  <meta name="description" content="We Design, Build & Innovate for Your Digital Success" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+</head>
+<body>
+  <!-- canvas for particles / blobs -->
+  <canvas id="scene-canvas"></canvas>
+
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-text">
+       <div class="logo">🚀Rapid Base Design</div>
+       <div class="brand-sub">Design · Build · Innovate</div>
+    </div>
+
+       <button id="nav-toggle" aria-label="Toggle menu">☰</button>
+
+      <nav id="site-nav" class="nav">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#contact" class="nav-link cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <video class="hero-video" autoplay muted loop playsinline src="https://player.vimeo.com/external/370420321.sd.mp4?s=4f3f7b3f0c2b7f9d7b8d5b0e6d4d0f9a6f1a3e5d&profile_id=165"></video>
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-inner">
+      <h1 class="hero-title">
+        <span id="typed-line">We Design, Build & Innovate</span>
+        <span class="cursor">|</span>
+      </h1>
+      <p class="hero-sub">Empowering businesses with modern, user-friendly, and impactful digital solutions.</p>
+      <div class="hero-actions">
+        <a href="#services" class="btn primary">Explore Services</a>
+        <a href="#contact" class="btn ghost">Get a Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT (parallax background) -->
+  <section id="about" class="section parallax about">
+    <div class="overlay-glass">
+      <h2>About Us</h2>
+      <p>Rapid Base Design Company is a creative digital agency offering end-to-end design and development services. We transform ideas into powerful digital experiences — websites, apps, branding and marketing that convert.</p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section services">
+  <div class="container">
+    <h2 class="section-title">Our Services</h2>
+    <p class="section-lead">Design, build and grow — full-stack digital services for startups & SMBs.</p>
+
+    <div class="cards">
+      
+      <!-- Web Design & Development -->
+      <article class="card" data-card>
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Web Design">
+        <h3>Web Design & Development</h3>
+        <p>Modern responsive websites, SEO-ready, fast & secure.</p>
+        <div class="card-images" style="display:none; margin-top:12px;">
+          <a href="images/webpage.jpeg" target="_blank">
+            <img src="images/webpage.jpeg" alt="Web Project 1">
+          </a>
+          <a href="images/personality.jpeg" target="_blank">
+            <img src="images/personality.jpeg" alt="Web Project 2">
+          </a>
+          <a href="images/coffee.jpeg" target="_blank">
+            <img src="images/coffee.jpeg" alt="Web Project 3">
+          </a>
+        </div>
+      </article>
+
+      <!-- Graphic & Brand Design -->
+      <article class="card" data-card>
+        <img src="https://tse1.mm.bing.net/th/id/OIP.BDMhdXItRCO08Sf9sW_rGwHaE7?pid=Api&P=0&h=180" alt="Graphic Design">
+        <h3>Graphic & Brand Design</h3>
+        <p>Logos, visual identity, brand kits and marketing creatives.</p>
+        <div class="card-images" style="display:none; margin-top:12px;">
+          <a href="images/poster.jpeg" target="_blank">
+            <img src="images/poster.jpeg" alt="Brand Project 1">
+          </a>
+          <a href="images/skincare.jpeg" target="_blank">
+            <img src="images/skincare.jpeg" alt="Brand Project 2">
+          </a>
+          <a href="images/aotura.jpeg" target="_blank">
+            <img src="images/aotura.jpeg" alt="Brand Project 3">
+          </a>
+          <a href="images/grahic.jpeg" target="_blank">
+            <img src="images/grahic.jpeg" alt="Brand Project 4">
+          </a>
+        </div>
+      </article>
+
+      <!-- App Development -->
+      <article class="card" data-card>
+        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=800&q=80" alt="App">
+        <h3>App Development</h3>
+        <p>Native & cross-platform apps with scalable architecture.</p>
+        <div class="card-images" style="display:none; margin-top:12px;">
+          <a href="images/camera.jpg" target="_blank">
+            <img src="images/camera.jpg" alt="App Project 1">
+          </a>
+          <a href="images/chess.jpg" target="_blank">
+            <img src="images/chess.jpg" alt="App Project 2">
+          </a>
+          <a href="images/app.jpg" target="_blank">
+            <img src="images/app.jpg" alt="App Project 3">
+          </a>
+        </div>
+      </article>
+
+      <!-- E-commerce Solutions -->
+      <article class="card" data-card>
+        <img src="https://media.istockphoto.com/id/2140172947/photo/women-using-laptop-shopping-online-with-cart-icons-with-a-virtual-interface-shipping-global.webp?a=1&b=1&s=612x612&w=0&k=20&c=jQCwwXhrURyiZCGKX58sTPVWA7LfdXCFzphu5vNB2pY=" alt="" alt="Ecommerce">
+        <h3>E-commerce Solutions</h3>
+        <p>Secure stores, payment integration, conversions optimized.</p>
+        <div class="card-images" style="display:none; margin-top:12px;">
+          <a href="images/holiday.jpg" target="_blank">
+            <img src="images/holiday.jpg" alt="E-commerce Project 1">
+          </a>
+          <a href="images/online shop.png" target="_blank">
+            <img src="images/online shop.png" alt="E-commerce Project 2">
+          </a>
+          <a href="images/ecommerce.png" target="_blank">
+            <img src="images/ecommerce.png" alt="E-commerce Project 3">
+          </a>
+        </div>
+      </article>
+
+      <!-- Digital Marketing -->
+      <article class="card" data-card>
+        <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&q=80" alt="Marketing">
+        <h3>Digital Marketing</h3>
+        <p>SEO, paid acquisition, social growth & campaign strategy.</p>
+        <div class="card-images" style="display:none; margin-top:12px;">
+          <a href="images/digital.jpg" target="_blank">
+            <img src="images/digital.jpg" alt="Marketing Project 1">
+          </a>
+          <a href="images/marketing.jpg" target="_blank">
+            <img src="images/marketing.jpg" alt="Marketing Project 2">
+          </a>
+          <a href="images/laptop.jpg" target="_blank">
+            <img src="images/laptop.jpg" alt="Marketing Project 3">
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- PORTFOLIO (parallax) -->
+  <section id="portfolio" class="section parallax portfolio">
+    <div class="overlay-glass">
+      <h2>Portfolio Highlights</h2>
+      <ul class="list">
+        <li>Redesigned salon website — +40% bookings</li>
+        <li>Custom e-commerce handling 500+ daily orders</li>
+        <li>Branding kits for 20+ startups</li>
+        <li>Real-time event booking app</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS (parallax) -->
+  <section id="testimonials" class="section parallax testimonials">
+    <div class="overlay-glass">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonials-wrap">
+        <blockquote>“Rapid Base transformed our online presence with a stunning website!” — Client A</blockquote>
+        <blockquote>“Affordable, professional, and reliable services. Highly recommended!” — Client B</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT (parallax) -->
+<section id="contact" class="section parallax contact">
+  <div class="overlay-glass contact-inner">
+    <h2>Contact Us</h2>
+    <p class="muted">
+      📩 rapidbasedesign1@gmail.com
+    </p>
+    <p class="muted">
+      📞 +91-7304660132
+    </p>
+    <!-- Email button -->
+    <a class="btn primary" href="mailto:rapidbasedesign1@gmail.com">Email Us</a>
+    <!-- New contact button (like Email Us) -->
+    <a class="btn primary" href="tel:+917304660132">Call Us</a>
+  </div>
+</section>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Rapid Base Design Company · All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+  <span class="close-btn">&times;</span>
+  <img class="lightbox-img" id="lightbox-img" alt="Preview">
+  <div class="lightbox-controls">
+    <button id="prev">⟨</button>
+    <button id="next">⟩</button>
+  </div>
+</div>
+
+
+  <script src="script.js" defer></script>
+</body>
+</html>
